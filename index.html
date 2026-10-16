@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f8fc">
-  <title>Maya Chen — Developer</title>
+  <title>hanlu — Developer</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -259,10 +259,9 @@
 <body>
   <div class="shell">
     <header class="topbar">
-      <a class="wordmark" href="#" aria-label="Maya Chen home">maya<span>.</span></a>
+      <a class="wordmark" href="#" aria-label="hanlu home">hanlu<span>.</span></a>
       <nav class="nav" aria-label="Main navigation">
         <a href="#projects">Projects</a>
-        <a href="mailto:maya.chen@example.com">Contact</a>
         <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
           <span aria-hidden="true">☾</span>
         </button>
@@ -273,9 +272,9 @@
       <section class="intro" aria-labelledby="intro-title">
         <div class="avatar" role="img" aria-label="Waving developer emoji">👩🏻‍💻</div>
         <div>
-          <p class="eyebrow">Hi, I'm Maya Chen</p>
+          <p class="eyebrow">Hi, I'm hanlu</p>
           <h1 id="intro-title">I build thoughtful<br><span>things for the web.</span></h1>
-          <p class="tagline">A product-minded software developer turning big ideas into fast, friendly digital experiences.</p>
+          <p class="tagline">Someone who is still learning.</p>
         </div>
       </section>
 
@@ -285,26 +284,26 @@
           <span class="project-count">01 — 04</span>
         </div>
         <div class="project-grid">
-          <a class="project-card" href="https://example.com" aria-label="Orbit Notes project">
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">🪐</span>
-            <h3>Orbit Notes</h3>
-            <p>A calm, collaborative workspace for ideas that are still finding their shape.</p>
-          </a>
-          <a class="project-card" href="https://example.com" aria-label="Little Ledger project">
+            <h3>AI Study Notes</h3>
+            <p>Notes and ideas gathered while exploring artificial intelligence.</p>
+          </article>
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">🌱</span>
-            <h3>Little Ledger</h3>
-            <p>A friendly personal finance dashboard that makes everyday progress feel clear.</p>
-          </a>
-          <a class="project-card" href="https://example.com" aria-label="Fieldwork project">
+            <h3>Skills</h3>
+            <p>Practical skills and techniques I’m developing as I learn about AI.</p>
+          </article>
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">🧭</span>
-            <h3>Fieldwork</h3>
-            <p>A lightweight planning tool for small teams doing meaningful work outdoors.</p>
-          </a>
-          <a class="project-card" href="https://example.com" aria-label="Tempo Studio project">
+            <h3>Plugins</h3>
+            <p>Tools and extensions I’m exploring to make AI workflows more useful.</p>
+          </article>
+          <article class="project-card">
             <span class="project-icon" aria-hidden="true">🎛️</span>
-            <h3>Tempo Studio</h3>
-            <p>A browser-based soundboard for shaping quick audio sketches into polished loops.</p>
-          </a>
+            <h3>Natural Science</h3>
+            <p>Study notes across biology, chemistry and the wider natural sciences.</p>
+          </article>
         </div>
       </section>
     </main>
@@ -330,10 +329,10 @@
     function setTheme(theme) {
       root.dataset.theme = theme;
       updateToggle();
-      localStorage.setItem("maya-theme", theme);
+      localStorage.setItem("hanlu-theme", theme);
     }
 
-    const savedTheme = localStorage.getItem("maya-theme");
+    const savedTheme = localStorage.getItem("hanlu-theme");
     if (savedTheme === "dark" || savedTheme === "light") setTheme(savedTheme);
     else updateToggle();
 
